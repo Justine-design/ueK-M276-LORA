@@ -30,6 +30,8 @@ body {
     font-weight: bold;
     font-family: 'Lora';
     height: 140px;
+    position: sticky;
+    top: 0;
 }
 
 .header h2 {
@@ -130,7 +132,7 @@ video {
     display: grid;
     grid-template-columns: 0.25fr 2fr 0.25fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 5px;
+    grid-column-gap: 0px;
     text-align: center;
     }
     
@@ -149,11 +151,9 @@ video {
     }
 
     #WortBildmarke {
-        width: 60px;
+        width: 75px;
         height: 90px;
     }
-
-
 
 
 /* Optimierungen fürs Handy */
@@ -199,7 +199,7 @@ width: auto;
 }
 
 .logorechts {
-height: 70px;
+height: 60px;
 width: auto;
 }
 
