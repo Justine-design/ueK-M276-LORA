@@ -5,6 +5,7 @@
 :root {
     --gruen: #183020;
     --beige: #d1b28b;
+    --akzent: #F18705;
 }
 
 .pacifico-regular {
@@ -22,6 +23,8 @@ body {
 /*Header*/
 .header {
     width: 100%;
+    position: relative;
+    z-index: 100;
     background-color: var(--gruen);
     color: white;
     padding: 15px;
@@ -90,9 +93,9 @@ video {
 /*Werbemittel Grid*/
 #werbe-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 0.25fr 1fr;
     justify-items: center;
-    gap: 80px; 
+    gap: 50px; 
     margin-top: 20px;
 }
 
@@ -102,9 +105,39 @@ video {
     width: 100%;
 }
 
+#werbe-grid #text {
+    background-color: var(--beige);
+    margin: 0;
+    padding: 0;
+}
+
+#werbe-grid p {
+    margin: 0;
+}
+
+#werbe-grid h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 #werbe-grid img {
     width: 100%;
 }
+
+#Flyer {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    font-family: 'Lora';
+}
+#Flyer img {
+    width: 100%;
+}
+
+
 
 /* Konzepte Grid*/
 .grid {
@@ -155,6 +188,16 @@ video {
         height: 90px;
     }
 
+    input {
+        background-color: var(--akzent);
+        color: var(--gruen);
+        border: none;
+        font-size: 18px;
+        font-family: 'Lora';
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
 
 /* Optimierungen fürs Handy */
 
@@ -232,6 +275,11 @@ background-color: white;
 padding: 20px;
 width: 100%;
 font-size: 18px;
+}
+
+#Flyer {
+    font-size: 18px;
+    font-family: 'Lora';
 }
 
 .grid {
